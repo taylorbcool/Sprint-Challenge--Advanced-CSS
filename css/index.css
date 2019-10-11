@@ -171,8 +171,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 0 0;
+  margin: 0;
   padding: 1rem;
+  background-color: whitesmoke;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -192,11 +193,10 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: 0.5s;
-  margin: 2rem 0 0 0;
+  margin-top: 2rem;
 }
 .navbar nav :hover {
-  color: white;
+  color: whitesmoke;
   background-color: black;
   border-radius: 5px;
 }
