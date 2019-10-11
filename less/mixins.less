@@ -5,3 +5,31 @@
     flex-direction: @direction;
     justify-content: @justify;
 }
+
+.button(@color, @bg-color) {
+    text-decoration: none;
+    color: @color;
+    background-color: @bg-color;
+    border-radius: 5px;
+    width: 25%;
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: 0.5s;
+    border: 1px solid @bg-color;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @color;
+    }
+}
+
+.hover(@color, @bg-color) {
+    transition: 0.5s;
+
+    :hover {
+        color: @bg-color;
+        background-color: @color;
+        border-radius: 5px;
+    }
+}
