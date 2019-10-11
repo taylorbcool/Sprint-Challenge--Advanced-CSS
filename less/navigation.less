@@ -1,1 +1,63 @@
 // Navigation code here
+
+.navbar {
+    .flex(column, center);
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 100%;
+
+    //Animate navbar to drop in like a spaceship cockpit thing
+    @keyframes slideInFromTop {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+    // This section calls the slideInFromTop animation we defined above
+    animation: 1s ease-out 0s 1 slideInFromTop;
+        
+
+    @media @phone {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+
+        @media @phone {
+            font-size: 3rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    nav {
+        .flex(row, space-between);
+        .hover(black, whitesmoke);
+        margin-top: 2rem;
+
+        @media @phone {
+            margin: 0 0.2rem;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+            padding: 0 2.3rem;
+            height: auto;
+
+            @media @phone {
+                margin: 0 0.2rem;
+                font-size: 1.4rem;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+}
