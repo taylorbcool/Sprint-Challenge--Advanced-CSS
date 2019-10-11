@@ -3,9 +3,10 @@
 .navbar {
     .flex(column, center);
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem;
     background-color: whitesmoke;
+    width: 100%;
 
     //Animate navbar to drop in like a spaceship cockpit thing
     @keyframes slideInFromTop {
@@ -17,7 +18,7 @@
         }
       }
       
-    /* This section calls the slideInFromTop animation we defined above */
+    // This section calls the slideInFromTop animation we defined above
     animation: 1s ease-out 0s 1 slideInFromTop;
         
 
@@ -41,6 +42,7 @@
 
         @media @phone {
             margin: 0 0.2rem;
+            width: 100%;
         }
 
         a {
